@@ -1,2 +1,2 @@
 # PS_43_Veselin
-PS - 3rd year
+nai dobriq kod e ne napisaniq :pray:
