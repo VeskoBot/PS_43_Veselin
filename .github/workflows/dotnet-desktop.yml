@@ -1,0 +1,17 @@
+name: Test BDZ Access
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-bdz:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test radar
+        run: |
+          curl -v --max-time 30 https://radar.bdz.bg/bg/refresh | head -c 1000
+
+      - name: Test razpisanie
+        run: |
+          curl -v --max-time 30 https://razpisanie.bdz.bg/bg | head -c 1000
